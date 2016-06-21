@@ -93,3 +93,9 @@ h1.page_head {
   color: white;
 
 }
+
+/*comments post title*/
+.comments_post_title, a.comments_post_title {
+  font-size: 250%;
+  margin: 40px 0;
+}
