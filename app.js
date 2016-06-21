@@ -64,4 +64,8 @@ app.controller('PostsCtrl', ['$scope','$stateParams','posts',function($scope, $s
     $scope.body = '';
   };
 
+  $scope.incrementUpvotes = function(comments){
+    comments.upvotes += 1;
+  };
+
 }]);

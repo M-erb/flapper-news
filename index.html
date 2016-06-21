@@ -11,6 +11,7 @@
 
   <ui-view></ui-view>
 
+
 <!--home template-->
 <script type="text/ng-template" id="/home.html">
   <h1 class="page_head">Flapper News</h1>
@@ -30,6 +31,7 @@
       </div>
     </div>
     <form class="form_container" ng-submit="addPost()">
+      <h3>Add a new post</h3>
       <div class="me-input-group">
         <input type="text" ng-model="title" placeholder="Post Title..."/>
       </div>
@@ -42,6 +44,7 @@
     </form>
   </div>
 </script>
+
 
 <!--posts template-->
 <script type="text/ng-template" id="/posts.html">
@@ -64,14 +67,12 @@
       </div>
       <form  class="form_container" ng-submit="addComment()">
         <h3>Add a new comment</h3>
-
         <div class="me-input-group">
           <input type="text" ng-model="title" placeholder="Comment..."/>
         </div>
         <div class="me-input-group">
           <button type="submit">Post</button>
         </div>
-
       </form>
     </div>
   </div>
