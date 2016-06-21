@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans);
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url('merb-forms.css');
+body {
+  padding: 0;
+  margin: 0;
+  font-family: fira sans, sans-serif;
+  color: #292929;
+  background-color: #ecf0f1;
+}
+
+h1.page_head {
+  font-family: Nunito, fira sans, sans-serif;
+  font-size: 400%;
+  padding: 4% 0  4% 20px;
+  margin: 0;
+  background-color: #34495e;
+  color: white;
+}
+
+/*posts style*/
+.posts_wrap {
+  width: 600px;
+  height: auto;
+  padding: 4%;
+  margin: 4% auto;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.posts_container {
+  margin-bottom: 60px;
+}
+
+.posts_list {
+  margin-bottom: 60px;
+  position: relative;
+  padding-left: 60px;
+}
+
+.upvote_btn {
+  border: 0px;
+  border: none;
+  border-radius: 1px;
+  color: white;
+  background-color: #16a085;
+  font-weight: 700;
+  font-size: 18px;
+  width: auto;
+  height: 20px;
+  cursor: pointer;
+  transition: all .5s;
+  padding: 10px 20px;
+  margin: 0 20px 0 0;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+.upvote_btn::before {
+  content: '^';
+  font-family: inherit;
+  font-size: 24px;
+  width: auto;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.post_title, .posts_list a {
+  color: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.posts_list a:last-child {
+  color: #3498db;
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: 10px;
+  text-transform: none;
+}
+.posts_list div {
+  margin-bottom: 10px;
+}
+
+/*add posts form*/
+.me-input-group [type=submit] {
+  background-color: #2980b9;
+  color: white;
+
+}
